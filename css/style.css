@@ -178,7 +178,7 @@ li {
 }
 
 .header__logo {
-    background-image: url('../img/logo.svg');
+    background-image: url('img/logo.svg');
 }
 
 .header__left {
