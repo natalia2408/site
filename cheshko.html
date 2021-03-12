@@ -6,7 +6,11 @@
         <title>Document</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/swiper-bundle.css" />
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/swiper-bundle.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
     </head>
     <body>
         <div class="site-container">
@@ -45,14 +49,46 @@
             <main class="main">
                 <section class="hero">
                     <div class="container hero__container">
-                        <div class="hero__banner banner">
+                      <div class="banner__slide banner_slide_1">
+                        <h1 class="hero__title">Проектные решения <br> <span class="hero__title__text">любой сложности</span></h1>
+                          <p class="hero__descr">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+                          </p>
+                          <p class="hero__descr__mini">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+                          </p>
+                        <button class="hero__btn btn btn-reset">Заказать расчет</button>
+                    </div>
+                      <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide"><img src="img/low-balconies.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="img/brown-and-blue-glass-building-2093076 1.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="img/apartment-apartment-building-architecture-building-323705 1.jpg" alt=""></div>
+                          ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                      </div>
+
+
+
+                        <!-- <div class="hero__banner banner">
                             <div class="banner__slide banner_slide_1">
                                 <h1 class="hero__title">Проектные решения <br> <span class="hero__title__text">любой сложности</span></h1>
+                                  <p class="hero__descr">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+                                  </p>
                                   <p class="hero__descr__mini">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
                                   </p>
                                 <button class="hero__btn btn btn-reset">Заказать расчет</button>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </section>
                 <section class="about">
@@ -95,34 +131,88 @@
                     <div class="container how_we_work__container">
                         <h2 class="how_we_work__title title">Как мы работаем</h2>
                         <div class="how_we_work__container__all">
-                            <div class="how_we_work__left">
-                                <ul class="how_we_work__steps">
-                                    <li class="how_we_work__steps__item"><a href="" class="how_we_work__steps__link">1 шаг</a></li>
-                                    <li class="how_we_work__steps__item"><a href="" class="how_we_work__steps__link">2 шаг</a></li>
-                                    <li class="how_we_work__steps__item"><a href="" class="how_we_work__steps__link">3 шаг</a></li>
-                                    <li class="how_we_work__steps__item"><a href="" class="how_we_work__steps__link">4 шаг</a></li>
-                                </ul>
-                                <h3 class="how_we_work__text__h3 h3">Проводим консультацию</h3>
-                                <p class="how_we_work__text__p">
-                                        Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
-                                <div class="how_we_work__btns">
-                                    <button class="how_we_work__btns__first btn">Подробнее</button>
-                                    <button class="how_we_work__btns__second btn">Договор</button>
+                          <div class="how_we_work__left">
+                            <ul class="how_we_work__steps">
+                                <li class="how_we_work__steps__item"><button href="" class="how_we_work__steps__link" data-path="one">1 шаг</button></li>
+                                <li class="how_we_work__steps__item"><button href="" class="how_we_work__steps__link" data-path="two">2 шаг</button></li>
+                                <li class="how_we_work__steps__item"><button href="" class="how_we_work__steps__link" data-path="three">3 шаг</button></li>
+                                <li class="how_we_work__steps__item"><button href="" class="how_we_work__steps__link" data-path="four">4 шаг</button></li>
+                            </ul>
+                            <div class="how_we_work__discription tab-content tab-content-active" data-target="one">
+                              <div class="tab-content__main">
+                                <div class="how_we_work__discription__left">
+                                  <h3 class="how_we_work__text__h3 h3">Проводим консультацию</h3>
+                                  <p class="how_we_work__text__p">
+                                      Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+                                  <div class="how_we_work__btns">
+                                      <button class="how_we_work__btns__first btn">Подробнее</button>
+                                      <button class="how_we_work__btns__second btn">Договор</button>
+                                  </div>
+                                </div>
+                                <div class="how_we_work__right">
+                                  <img src="/img/Rectangle 18.jpg" alt="" class="how_we_work__right__img">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="how_we_work__discription tab-content" data-target="two">
+                              <div class="tab-content__main">
+                                <div class="how_we_work__discription__left">
+                                  <h3 class="how_we_work__text__h3 h3">Составляем смету</h3>
+                                  <p class="how_we_work__text__p">
+                                    Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.</p>
+                                  <div class="how_we_work__btns how_we_work__btns__main__two">
+                                      <button class="how_we_work__btns__first btn">Подробнее</button>
+                                      <button class="how_we_work__btns__second btn">Договор</button>
+                                  </div>
+                                </div>
+                                <div class="how_we_work__right">
+                                  <img src="/img/Rectangle 18_2.jpg" alt="" class="how_we_work__right__img">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="how_we_work__discription tab-content" data-target="three">
+                                <div class="tab-content__main">
+                                    <div class="how_we_work__discription__left">
+                                      <h3 class="how_we_work__text__h3 h3">Привлекаем подрядчиков</h3>
+                                      <p class="how_we_work__text__p">
+                                        Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.</p>
+                                      <div class="how_we_work__btns how_we_work__btns__main__three">
+                                          <button class="how_we_work__btns__first btn">Подробнее</button>
+                                          <button class="how_we_work__btns__second btn">Договор</button>
+                                      </div>
+                                    </div>
+                                    <div class="how_we_work__right">
+                                      <img src="/img/Rectangle 19.jpg" alt="" class="how_we_work__right__img">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="how_we_work__right">
-                                <img src="/img/Rectangle 18.jpg" alt="" class="how_we_work__right__img">
+                            <div class="how_we_work__discription tab-content" data-target="four">
+                                <div class="tab-content__main">
+                                    <div class="how_we_work__discription__left">
+                                      <h3 class="how_we_work__text__h3 h3">Инспектируем все этапы работ</h3>
+                                      <p class="how_we_work__text__p">
+                                        Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.</p>
+                                      <div class="how_we_work__btns how_we_work__btns__main__four">
+                                          <button class="how_we_work__btns__first btn">Подробнее</button>
+                                          <button class="how_we_work__btns__second btn">Договор</button>
+                                      </div>
+                                    </div>
+                                    <div class="how_we_work__right">
+                                      <img src="/img/Rectangle 20.jpg" alt="" class="how_we_work__right__img">
+                                    </div>
+                                </div>
                             </div>
+                    </div>
                         </div>
                         <div class="how_we_work__container__all__medium">
                           <div class="how_we_work__left">
                               <ul class="how_we_work__steps">
-                                  <li class="how_we_work__steps__item"><a href="" class="how_we_work__steps__link">1 шаг</a></li>
-                                  <li class="how_we_work__steps__item"><a href="" class="how_we_work__steps__link">2 шаг</a></li>
-                                  <li class="how_we_work__steps__item"><a href="" class="how_we_work__steps__link">3 шаг</a></li>
-                                  <li class="how_we_work__steps__item"><a href="" class="how_we_work__steps__link">4 шаг</a></li>
+                                  <li class="how_we_work__steps__item"><button class="how_we_work__steps__link" data-path="one">1 шаг</button></li>
+                                  <li class="how_we_work__steps__item"><button class="how_we_work__steps__link" data-path="two">2 шаг</button></li>
+                                  <li class="how_we_work__steps__item"><button class="how_we_work__steps__link" data-path="three">3 шаг</button></li>
+                                  <li class="how_we_work__steps__item"><button class="how_we_work__steps__link" data-path="four">4 шаг</button></li>
                               </ul>
-                              <div class="how_we_work__discription">
+                              <div class="how_we_work__discription tab-content tab-content-active" data-target="one">
                                 <div class="how_we_work__discription__left">
                                   <h3 class="how_we_work__text__h3 h3">Проводим консультацию</h3>
                                   <p class="how_we_work__text__p">
@@ -136,6 +226,48 @@
                                     <img src="/img/Rectangle 18.jpg" alt="" class="how_we_work__right__img">
                                 </div>
                             </div>
+                            <div class="how_we_work__discription tab-content tab-content-active" data-target="two">
+                              <div class="how_we_work__discription__left">
+                                <h3 class="how_we_work__text__h3 h3">Проводим консультацию</h3>
+                                <p class="how_we_work__text__p">
+                                    Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+                                <div class="how_we_work__btns">
+                                    <button class="how_we_work__btns__first btn">Подробнее</button>
+                                    <button class="how_we_work__btns__second btn">Договор</button>
+                                </div>
+                              </div>
+                              <div class="how_we_work__right">
+                                  <img src="/img/Rectangle 18.jpg" alt="" class="how_we_work__right__img">
+                              </div>
+                          </div>
+                          <div class="how_we_work__discription tab-content tab-content-active" data-target="three">
+                            <div class="how_we_work__discription__left">
+                              <h3 class="how_we_work__text__h3 h3">Проводим консультацию</h3>
+                              <p class="how_we_work__text__p">
+                                  Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+                              <div class="how_we_work__btns">
+                                  <button class="how_we_work__btns__first btn">Подробнее</button>
+                                  <button class="how_we_work__btns__second btn">Договор</button>
+                              </div>
+                            </div>
+                            <div class="how_we_work__right">
+                                <img src="/img/Rectangle 18.jpg" alt="" class="how_we_work__right__img">
+                            </div>
+                        </div>
+                        <div class="how_we_work__discription tab-content tab-content-active" data-target="four">
+                          <div class="how_we_work__discription__left">
+                            <h3 class="how_we_work__text__h3 h3">Проводим консультацию</h3>
+                            <p class="how_we_work__text__p">
+                                Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+                            <div class="how_we_work__btns">
+                                <button class="how_we_work__btns__first btn">Подробнее</button>
+                                <button class="how_we_work__btns__second btn">Договор</button>
+                            </div>
+                          </div>
+                          <div class="how_we_work__right">
+                              <img src="/img/Rectangle 18.jpg" alt="" class="how_we_work__right__img">
+                          </div>
+                      </div>
                           </div>
                       </div>
                     </div>
@@ -220,5 +352,7 @@
                 </div>
             </footer>
         </div>
+        <script src="js/slider.js"></script>
+        <script src="js/tabs.js"></script>
     </body>
 </html>
