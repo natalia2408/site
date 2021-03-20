@@ -212,17 +212,17 @@ li {
     margin-top: 5px;
     margin-right: 13px;
     background-color: white ;
-    background-image: url('/img/search2.svg');
+    background-image: url('../img/search2.svg');
     background-repeat: no-repeat;
 }
 
 .header__search:hover {
-    background-image: url('/img/search3.svg');
+    background-image: url('../img/search3.svg');
     background-repeat: no-repeat;
 }
 
 .header__search:active {
-  background-image: url('/img/search4.svg');
+  background-image: url('../img/search4.svg');
   background-repeat: no-repeat;
 }
 
@@ -234,7 +234,7 @@ li {
 
 .hero__banner {
     height: 620px;
-    background-image: url('/img/low-balconies.jpg');
+    background-image: url('../img/low-balconies.jpg');
     background-repeat: no-repeat;
 }
 
@@ -314,7 +314,7 @@ padding-top: 36px;
     width: 870px;
     height: 100%;
     margin-top: 6px;
-    background-image: url('/img/Rectangle.jpg');
+    background-image: url('../img/Rectangle.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -373,13 +373,13 @@ padding-top: 36px;
 
 .about_col-1_img1 {
     margin: 66px auto 83px 62px;
-    background-image: url('/img/Group1.svg');
+    background-image: url('../img/Group1.svg');
 
 }
 
 .about_col-1_img2 {
     height: 153px;
-    background-image: url('/img/Group2.svg');
+    background-image: url('../img/Group2.svg');
     margin: 52px auto auto 62px;
 }
 
@@ -534,13 +534,13 @@ border-top: solid 1px #ff9900;
     width: 1769px;
     height: 50px;
     display: block;
-    background-image: url(/img/Ellipse\ 11.svg);
+    background-image: url(../img/Ellipse\ 11.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
 
 .questions__list__link:hover {
-    background-image: url(/img/Ellipse_orange.svg);
+    background-image: url(../img/Ellipse_orange.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -573,7 +573,7 @@ border-top: solid 1px #ff9900;
 }
 
 .footer__logo {
-    background-image: url('/img/logo_white.svg');
+    background-image: url('../img/logo_white.svg');
 }
 
 .footer__container__col1__list {
@@ -616,41 +616,41 @@ border-top: solid 1px #ff9900;
 }
 
 .footer__col1__list-social__fb {
-    background-image: url('/img/fb.svg');
+    background-image: url('../img/fb.svg');
     margin-left: -1px;
 }
 
 .footer__col1__list-social__fb:hover {
-    background-image: url('/img/fb_orange.svg');
+    background-image: url('../img/fb_orange.svg');
 }
 
 .footer__col1__list-social__fb:active {
-    background-image: url('/img/fb_white.svg');
+    background-image: url('../img/fb_white.svg');
 }
 
 .footer__col1__list-social__vk {
-    background-image: url('/img/vk.svg');
+    background-image: url('../img/vk.svg');
 }
 
 .footer__col1__list-social__vk:hover {
-    background-image: url('/img/vk_orange.svg');
+    background-image: url('../img/vk_orange.svg');
 }
 
 .footer__col1__list-social__vk:active {
-    background-image: url('/img/vk_white.svg');
+    background-image: url('../img/vk_white.svg');
 }
 
 .footer__col1__list-social__in {
-    background-image: url('/img/in.svg');
+    background-image: url('../img/in.svg');
     margin-left: -1px;
 }
 
 .footer__col1__list-social__in:hover {
-    background-image: url('/img/in_orange.svg');
+    background-image: url('../img/in_orange.svg');
 }
 
 .footer__col1__list-social__in:active {
-    background-image: url('/img/in_white.svg');
+    background-image: url('../img/in_white.svg');
 }
 
 .footer__container__col2 {
@@ -1005,7 +1005,7 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url('/img/Rectangle\ 181.jpg');
+    background-image: url('../img/Rectangle\ 181.jpg');
     background-repeat: no-repeat;
     margin-top: 11px;
   }
@@ -1162,7 +1162,7 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     margin: 0 auto;
     background-size: cover;
     height: 700px;
-    background-image: url('/img/low-balconies_medium2.jpg');
+    background-image: url('../img/low-balconies_medium2.jpg');
   }
   .hero__title {
     font-size: 60px;
@@ -1202,7 +1202,7 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     width: 87%;
     margin-top: 0px;
     margin-left: 50px;
-    background-image: url('/img/Rectangle\ 2.jpg');
+    background-image: url('../img/Rectangle\ 2.jpg');
   }
   .about__banner__container {
     height: 173px;
@@ -1325,7 +1325,7 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     margin-left: 50px;
     display: flex;
     justify-content: center;
-    background-image: url('/img/Rectangle\ 182.jpg');
+    background-image: url('../img/Rectangle\ 182.jpg');
   }
 
   .how_we_work__btns__first {
@@ -1535,7 +1535,7 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     height: 262px;
     margin: 0 auto;
     background-size: cover;
-    background-image: url('/img/low-angle-photo-of-balconies_mini.jpg');
+    background-image: url('../img/low-angle-photo-of-balconies_mini.jpg');
   }
   .hero__title {
     font-size: 20px;
@@ -1590,7 +1590,7 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     max-height: 200px;
     margin-top: 0px;
     margin-left: 15px;
-    background-image: url('/img/Rectangle_320.jpg');
+    background-image: url('../img/Rectangle_320.jpg');
   }
 
   .about_col {
@@ -1749,7 +1749,7 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     margin-left: 15px;
     display: flex;
     justify-content: center;
-    background-image: url(/img/Rectangle\ mini.jpg);
+    background-image: url(../img/Rectangle\ mini.jpg);
     background-repeat: no-repeat;
   }
 
