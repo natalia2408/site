@@ -7,6 +7,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/swiper-bundle.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <script src="js/swiper-bundle.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
     </head>
     <body>
         <div class="site-container">
@@ -44,18 +48,29 @@
             </header>
             <main class="main">
                 <section class="hero">
-                    <div class="container hero__container">
-                        <div class="hero__banner banner">
-                            <div class="banner__slide banner_slide_1">
-                                <h1 class="hero__title">Проектные решения <br> <span class="hero__title__text">любой сложности</span></h1>
-                                  <p class="hero__descr">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
-                                  </p>
-                                  <p class="hero__descr__mini">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
-                                  </p>
-                                <button class="hero__btn btn btn-reset">Заказать расчет</button>
-                            </div>
+                    <div class="swiper-container container hero__container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper hero__banner banner">
+                          <!-- Slides -->
+                          <div class="swiper-slide banner__slide banner_slide_1"></div>
+                          <div class="swiper-slide banner__slide banner_slide_2"></div>
+                          <div class="swiper-slide banner__slide banner_slide_3"></div>
                         </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
+                    <div class="banner__slide__text">
+                        <h1 class="hero__title">Проектные решения <br> <span class="hero__title__text">любой сложности</span></h1>
+                        <p class="hero__descr">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+                        </p>
+                        <p class="hero__descr__mini">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+                        </p>
+                        <button class="hero__btn btn btn-reset">Заказать расчет</button>
+                    </div>  
                 </section>
                 <section class="about">
                     <div class="container about__container">
@@ -222,5 +237,6 @@
                 </div>
             </footer>
         </div>
+        <script src="js/slider.js"></script>
     </body>
 </html>

@@ -232,9 +232,26 @@ li {
 
 /* Hero */
 
+.hero {
+  height: 620px;;
+  position: relative;
+}
+
+.hero__container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.banner__slide__text {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 66px;
+}
+
 .hero__banner {
     height: 620px;
-    background-image: url('../img/low-balconies.jpg');
     background-repeat: no-repeat;
 }
 
@@ -256,6 +273,7 @@ li {
     font-size: 1.439rem;
     font-weight: 800;
     line-height: 28px;
+    width: 55%;
 }
 
 .hero__btn {
@@ -265,6 +283,18 @@ li {
     font-size: 26px;
     font-weight: 700;
     line-height: 28px;
+}
+
+.banner_slide_1 {
+  background-image: url('../img/low-balconies.jpg');
+}
+
+.banner_slide_3 {
+  background-image: url('../img/brown-and-blue-glass-building-2093076\ 1.jpg');
+}
+
+.banner_slide_2 {
+  background-image: url('../img/apartment-apartment-building-architecture-building-323705\ 1.jpg');
 }
 
 /* About */
