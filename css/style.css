@@ -287,14 +287,20 @@ li {
 
 .banner_slide_1 {
   background-image: url('../img/low-balconies.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner_slide_3 {
   background-image: url('../img/brown-and-blue-glass-building-2093076\ 1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner_slide_2 {
   background-image: url('../img/apartment-apartment-building-architecture-building-323705\ 1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* About */
@@ -901,6 +907,15 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     margin-right: 0px;
   }
 
+  .hero {
+    height: 670px;
+  }
+
+  .banner__slide__text {
+    width: 50rem;
+    left: 100px;
+  }
+
   .hero__banner {
     width: 924px;
     margin: 0 auto;
@@ -910,17 +925,18 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
   .hero__title {
     font-size: 60px;
     line-height: 73px;
-    padding: 161px 0 0 46px;
+    padding: 161px 0 0 0px;
   }
   .hero__descr {
-    padding: 10px 0 0 46px;
+    width: 82%;
+    padding: 10px 0 0 0px;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
   }
   .hero__btn {
     width: 287px;
-    margin: 110px 0 0 46px;
+    margin: 110px 0 0 0px !important;
   }
   .about {
     height: 1777px;
