@@ -551,7 +551,6 @@ padding-top: 36px;
 .tab__content__flex {
   display: flex;
   flex-direction: row;
-  justify-content: ;
 }
 
 .tab__content__right {
@@ -878,7 +877,6 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
 @media (min-width: 1024px) and (max-width: 1769px){
   .header__container,
   .header__container__mini,
-  .how_we_work__container__all,
   .footer__container__col3,
   .how_we_work__right__img,
   .questions__list__medium2,
@@ -1065,17 +1063,18 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
   .how_we_work__steps {
     padding-left: 1px;
     padding-bottom: 41px;
+    padding-top: 60px;
   }
   .how_we_work__steps__link {
-    width: 60px;
+    width: 50px;
     display: block;
   }
   .how_we_work__steps__item {
-    padding-right: 75px
+    padding-right: 87px;
   }
   .how_we_work__steps__item:nth-child(2),
   .how_we_work__steps__item:nth-child(3) {
-    padding-right: 80px;
+    padding-right: 90px;
   }
   .how_we_work__discription {
     display: flex;
@@ -1091,6 +1090,7 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     width: 437px;
     line-height: 32px;
     margin-bottom: -25px;
+    min-height: 576px;
   }
   .how_we_work__right {
     width: 463px;
@@ -1104,15 +1104,38 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     margin-top: 11px;
   }
 
+  .how_we_work__right__two {
+    background-image: url('../img/Rectangle\ 18_2.jpg');
+    background-size: cover;
+  }
+
+  .how_we_work__right__three {
+    background-image: url('../img/Rectangle\ 19.jpg');
+    background-size: cover;
+  }
+
+  .how_we_work__right__four {
+    background-image: url('../img/Rectangle\ 20.jpg');
+      background-size: cover;
+  }
+
   .how_we_work__btns__first {
-    padding: 21px 40px;
+    padding: 21px 35px;
     margin: 1px 26px 0px 2px;
   }
   .how_we_work__btns__second {
     font-size: 18px;
-    padding: 19px 39px !important;
+    padding: 19px 32px !important;
     margin-top: 1px;
   }
+  .tab__content__right {
+    padding-right: 50px;
+  }
+
+  .tab__content__right {
+    width: 53%;
+  }
+
   .questions__title {
     padding-top: 56px;
     padding-left: 0px;
@@ -1186,7 +1209,6 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
 @media (min-width: 768px) and (max-width: 1023px) {
   .header__container,
   .header__container__mini,
-  .how_we_work__container__all,
   .footer__container__col3,
   .how_we_work__right__img,
   .questions__list,
@@ -1457,6 +1479,7 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     line-height: 32px;
     margin-bottom: -25px;
     margin-left: 48px;
+    min-height: 352px;
   }
   .how_we_work__right {
     width: 668px;
@@ -1467,8 +1490,23 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     background-image: url('../img/Rectangle\ 182.jpg');
   }
 
+  .how_we_work__right__two {
+    background-image: url('../img/Rectangle\ 18_2.jpg');
+    background-size: cover;
+  }
+
+  .how_we_work__right__three {
+    background-image: url('../img/Rectangle\ 19.jpg');
+    background-size: cover;
+  }
+
+  .how_we_work__right__four {
+    background-image: url('../img/Rectangle\ 20.jpg');
+      background-size: cover;
+  }
+
   .how_we_work__btns__first {
-    padding: 21px 40px;
+    padding: 21px 36px;
     margin: 0 26px 0px 50px;
   }
 
@@ -1477,8 +1515,16 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
   }
   .how_we_work__btns__second {
     font-size: 18px;
-    padding: 19px 39px !important;
+    padding: 18px 32px !important;
     margin-top: 1px;
+  }
+
+  .tab__content__right {
+    width: 100%;
+  }
+
+  .tab__content__flex {
+    flex-direction: column-reverse;
   }
   .questions__title {
     padding-top: 71px;
@@ -1603,7 +1649,6 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
   .header__search,
   .hero__descr,
   .about__banner__container,
-  .how_we_work__container__all,
   .questions__list__medium2,
   .footer__container__col1__list,
   .banner__slide__text__768_1,
@@ -1858,7 +1903,10 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     margin-right: 0px;
     width: 270px;
   }
-
+  .how_we_work {
+    width: 1105px;
+    max-width: 320px;
+  }
 
   .how_we_work__container {
     padding-top: 48px;
@@ -1872,9 +1920,9 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     height: 100%;
   }
   .how_we_work__steps {
-    padding-left: 14px;
+    padding-left: 3px;
     padding-bottom: 13px;
-    padding-top: 35px;
+    padding-top: 33px;
   }
   .how_we_work__steps__link {
     width: 60px;
@@ -1903,35 +1951,63 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
   }
   .how_we_work__text__p{
     width: 305px;
-    max-height: 700px;
+    min-height: 700px;
     line-height: 28px;
     margin-bottom: -25px;
     padding-left: 15px;
     font-size: 14px;
     margin-top: -1px;
   }
+
+  .tab__content__flex {
+    flex-direction: column-reverse;
+  }
+
+  .tab__content__right {
+    width: 100%;
+  }
+
+
   .how_we_work__right {
-    width: 668px;
+    width: 290px;
     height: 159px;
     margin-left: 15px;
     display: flex;
     justify-content: center;
-    background-image: url(../img/Rectangle\ mini.jpg);
+    background-image: url('../img/Rectangle\ mini.jpg');
     background-repeat: no-repeat;
   }
 
+  .how_we_work__right__two {
+    background-image: url('../img/Rectangle\ 18_2.jpg');
+    background-size: cover;
+  }
+
+  .how_we_work__right__three {
+    background-image: url('../img/Rectangle\ 19.jpg');
+    background-size: cover;
+  }
+
+  .how_we_work__right__four {
+    background-image: url('../img/Rectangle\ 20.jpg');
+      background-size: cover;
+  }
+
   .how_we_work__btns__first {
-    padding: 14px 46px;
-    margin: 0 5px 0px 15px;
+    padding: 14px 42px;
+    margin: 0 9px 2px 15px;
     font-size: 0.801rem;
   }
 
   .how_we_work__btns {
     padding-top: 45px;
+    display: flex;
+    flex-direction: row;
   }
   .how_we_work__btns__second {
-    font-size: 0.85rem;
-    padding: 12px 33px !important;
+    font-size: 12px;
+    padding: 12px 32px !important;
+    margin-bottom: 1px;
   }
   .container__questions {
     width: 100%;
@@ -1943,7 +2019,7 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
   .questions__title {
     font-size: 1.5rem;
     line-height: 1.2;
-    padding: 41px 0 0 0;
+    padding: 38px 0 0 0;
   }
   .questions__list__link {
     width: 100%;
