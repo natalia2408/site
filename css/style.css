@@ -71,7 +71,9 @@ li {
     color: #ff9900;
 }
 
-
+.how_we_work__steps__link {
+  background-color: white;
+}
 
 .nav__link:hover {
   border-bottom: solid 2px #ff9900;
@@ -622,6 +624,7 @@ padding-top: 36px;
   background-size: cover;
   right: 10px;
   display: block;
+  transition: 0.5s;
 }
 
 .questions__list__link_icon__active {
@@ -629,11 +632,14 @@ padding-top: 36px;
   height: 50px;
   content: '';
   position: absolute;
-  background-image: url('/img/Ellipse\ 12.png') !important; 
+  background-image: url('/img/Ellipse14.png') !important; 
+  /* background-image: url('/img/Ellipse\ 12.png') !important;  */
   background-repeat: no-repeat;
   background-size: cover;
   right: 10px;
   display: block;
+  transform: rotate(45deg);
+  transition: 0.5s;
 }
 
 /* .questions__list__link:hover {
@@ -952,34 +958,35 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
   }
 
   .container {
-    width: 924px;
+    /* width: 924px; */
     margin: 0 auto;
   }
-
+  
   .header__container__medium {
-    max-width: 1024px;
     height: 100px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    justify-content: space-between;
+    padding: 0 50px;
   }
   .header__logo__medium {
     width: 150px;
     height: 48px;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-right: 22.7rem;
   }
   .burger {
     position: relative;
     width: 30px;
     height: 23px;
-    margin: 40px auto auto 0px;
+    /* margin: 40px auto auto 0px; */
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    background-color: white;
   }
   .burger span, .burger:after, .burger:before{
     height: 3px;
@@ -998,6 +1005,77 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
   .burger:before{
       top: 0px;
   }
+
+  .burger:hover span,
+  .burger:hover:before,
+  .burger:hover:after {
+    background: #FF9900;
+  }
+
+  .burger:hover span{
+    width: 25px;
+    right: 0px;
+    left: auto;
+  }
+
+  .burger:hover:after {
+    width: 18px;
+    right: 0px;
+    left: auto;
+  }
+
+  .burger:active span,
+  .burger:active:before,
+  .burger:active:after {
+    background: #E1670E;
+  }
+
+  .burger:active span{
+    width: 25px;
+    right: 0px;
+    left: auto;
+  }
+
+  .burger:active:after {
+    width: 18px;
+    right: 0px;
+    left: auto;
+  }
+
+  .burder__menu {
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+    background-color: white;
+    transition: transform .5s ease-in-out;
+    transform: translateY(-200%);
+    line-height: 1.15;
+  }
+
+  .nav__list__burger {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: normal;
+  }
+
+  .nav__list__burger li {
+    padding-right: 0px !important;
+  }
+
+  .nav__list__burger li a {
+      font-size: 18px;
+      font-weight: 600;
+  }
+
+  .menu_is_active {
+    transform: none;
+  }
+
 
   .header__search {
     margin-right: 0px;
@@ -1129,9 +1207,11 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     padding-bottom: 41px;
     padding-top: 60px;
   }
+
   .how_we_work__steps__link {
     width: 50px;
     display: block;
+    background-color: white;
   }
   .how_we_work__steps__item {
     padding-right: 87px;
@@ -1347,6 +1427,77 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
       top: 0px;
   }
 
+  .burger:hover span,
+  .burger:hover:before,
+  .burger:hover:after {
+    background: #FF9900;
+  }
+
+  .burger:hover span{
+    width: 25px;
+    right: 0px;
+    left: auto;
+  }
+
+  .burger:hover:after {
+    width: 18px;
+    right: 0px;
+    left: auto;
+  }
+
+  .burger:active span,
+  .burger:active:before,
+  .burger:active:after {
+    background: #E1670E;
+  }
+
+  .burger:active span{
+    width: 25px;
+    right: 0px;
+    left: auto;
+  }
+
+  .burger:active:after {
+    width: 18px;
+    right: 0px;
+    left: auto;
+  }
+
+  .burder__menu {
+    position: absolute;
+    z-index: 10;
+    top: 70px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+    background-color: white;
+    transition: transform .5s ease-in-out;
+    transform: translateY(-200%);
+    line-height: 1.15;
+  }
+
+  .nav__list__burger {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: normal;
+  }
+
+  .nav__list__burger li {
+    padding-right: 0px !important;
+  }
+
+  .nav__list__burger li a {
+      font-size: 18px;
+      font-weight: 600;
+  }
+
+  .menu_is_active {
+    transform: none;
+  }
+
+
   .header__search {
     margin-right: 47px;
     width: 28px;
@@ -1536,6 +1687,7 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
   .how_we_work__steps__link {
     width: 60px;
     display: block;
+    background-color: white;
   }
   .how_we_work__steps__item {
     padding-right: 144px
@@ -1691,11 +1843,14 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
   .questions__list__link_icon {
     top: 37px;
     right: 0;
+    transition: 0.5s;
   }
 
   .questions__list__link_icon__active {
     top: 37px;
     right: 0;
+    transform: rotate(45deg);
+    transition: 0.5s;
   } 
 
   .ui-accordion-content {
@@ -1861,6 +2016,85 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
   }
   .burger:before{
       top: 0px;
+  }
+
+  .burger:hover span,
+  .burger:hover:before,
+  .burger:hover:after {
+    background: #FF9900;
+  }
+
+  .burger:hover span{
+    width: 25px;
+    right: 0px;
+    left: auto;
+  }
+
+  .burger:hover:after {
+    width: 18px;
+    right: 0px;
+    left: auto;
+  }
+
+  .burger:active span,
+  .burger:active:before,
+  .burger:active:after {
+    background: #E1670E;
+  }
+
+  .burger:active span{
+    width: 25px;
+    right: 0px;
+    left: auto;
+  }
+
+  .burger:active:after {
+    width: 18px;
+    right: 0px;
+    left: auto;
+  }
+
+  .burder__menu {
+    position: absolute;
+    z-index: 10;
+    top: 44px;
+    left: auto;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+    background-color: white;
+    transition: transform .5s ease-in-out;
+    transform: translateY(-200%);
+    line-height: 1.15;
+  }
+
+  .nav__list__burger {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: normal;
+  }
+
+  .nav__list__burger li {
+    padding-right: 0px !important;
+  }
+
+  .nav__list__burger li a {
+      font-size: 18px;
+      font-weight: 600;
+  }
+
+  .menu_is_active {
+    transform: none;
+  }
+
+
+  .header__search {
+    margin-right: 47px;
+    width: 28px;
+    height: 28px;
+    margin-bottom: 7px;
   }
 
   .hero__banner {
@@ -2049,6 +2283,7 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     width: 60px;
     display: block;
     font-size: 0.9rem;
+    background-color: white;
   }
   .how_we_work__steps__item {
     padding-right: 21px
@@ -2198,6 +2433,11 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     width: 30px;
     height: 30px;
     right: -1px;
+    transition: 0.5s;
+  }
+
+  .questions__list__link_icon__active {
+    transform: rotate(45deg);
   }
 
   .questions__list__link__text {

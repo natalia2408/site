@@ -55,9 +55,28 @@
                     </nav>
                 </div>
                 <div class="container header__container__medium">
-                  <button class="btn__reset burger">
+                  <button id="burger" class="btn__reset burger">
                     <span></span>
                   </button>
+                  <div id="burder__menu" class="burder__menu menu_is_active">
+                    <ul class="nav__list nav__list__burger">
+                        <li class="nav__item">
+                            <a href="nav__link" class="nav__link">О нас</a>
+                        </li>
+                        <li class="nav__item" >
+                            <a href="nav__link" class="nav__link">Проекты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="nav__link" class="nav__link">Этапы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="nav__link" class="nav__link">Отзывы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="nav__link" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                  </div>
                   <a href="" class="header__logo logo header__logo__medium"></a>
                   <button class="btn__reset header__search"></button>
                 </div>
@@ -397,5 +416,6 @@
         </div>
         <script src="js/slider.js"></script>
         <script src="js/tabs.js"></script>
+        <script src="js/burger.js"></script>
     </body>
 </html>
