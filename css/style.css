@@ -6,7 +6,8 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+.ui-widget {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -37,6 +38,10 @@ li {
 
 .how_we_work__btns__second {
     border-color: #333333;
+}
+
+.questions__list__link {
+  color: #333;
 }
 
 .about__btn {
@@ -133,8 +138,7 @@ li {
 .footer__container__col2__form textarea,
 .footer__container__col2__form textarea::placeholder,
 .footer__form__lb-politics,
-.how_we_work__btns__first:active,
-.questions__list__link:active {
+.how_we_work__btns__first:active {
     color: #CACACA;
 }
 
@@ -158,6 +162,10 @@ li {
 .h3 {
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+.ui-accordion-header-icon {
+  display: none;
 }
 
 /* Header */
@@ -570,50 +578,106 @@ padding-top: 36px;
 
 .questions__list {
     padding-top: 51px;
+    min-height: 608px;
 }
 
 .questions__list__item {
     padding: 30px 0px;
-    border-top: solid 1px #CACACA;
+    /* border-top: solid 1px #CACACA; */
 }
 
-.questions__list__item:hover {
-border-top: solid 1px #ff9900;
+.ui-state-default {
+  border: none;
 }
-
-.questions__list__item:hover + .questions__list__item {
-  border-top: solid 1px #ff9900;
-}
-
-
-.questions__list__item:last-child {
-    border-bottom: solid 1px #CACACA;
-}
-
-.questions__list__item:last-child:hover {
-  border-top: solid 1px #ff9900;
-  border-bottom:solid 1px #ff9900;
-  }
 
 .questions__list__link {
     width: 1769px;
-    height: 50px;
+    height: 110px;
+    position: relative;
     display: block;
-    background-image: url(../img/Ellipse\ 11.svg);
+    /* background-image: url(../img/Ellipse\ 11.svg); */
     background-repeat: no-repeat;
     background-position: right;
+    background-color: transparent;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    font-size: 25px !important;
+    font-weight: 700;
+    padding: 1.5em .5em .5em 0.2em !important;
+    margin-top: 0px !important;
+    /* background-size: 50% 50%;
+    background-position-x: 1300px;
+    background-position-y: 29px; */
 }
 
-.questions__list__link:hover {
+
+.questions__list__link_icon {
+  width: 50px;
+  height: 50px;
+  content: '';
+  position: absolute;
+  background-image: url('/img/Ellipse14.png') !important; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 10px;
+  display: block;
+}
+
+.questions__list__link_icon__active {
+  width: 50px;
+  height: 50px;
+  content: '';
+  position: absolute;
+  background-image: url('/img/Ellipse\ 12.png') !important; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 10px;
+  display: block;
+}
+
+/* .questions__list__link:hover {
     background-image: url(../img/Ellipse_orange.svg);
     background-repeat: no-repeat;
-    background-position: right;
 }
+
+.questions__list__link:active,
+.questions__list__link:focus {
+  background-image: url(../img/Ellipse\ 12.svg);
+  background-repeat: no-repeat;
+} */
 
 .questions__list__link__text {
     display: block;
     padding: 10px 0px 0px 5px;
 }
+
+.questions__list__link__li {
+  border-top: 1px solid #CACACA;
+}
+
+.questions__list__link__li:last-child {
+  border-bottom: 1px solid #CACACA;
+}
+
+.questions__list__link__li:hover {
+  color: #ff9900;
+  border-top: 1px solid #ff9900;
+}
+
+.questions__list__link__li:hover + .questions__list__link__li {
+  border-top: 1px solid #ff9900;
+}
+
+.questions__list__link__li:hover {
+  border-bottom: none;
+}
+
+.questions__list__link__li:last-child:hover {
+  border-bottom: 1px solid #ff9900;
+}
+
+
 
 /* Footer */
 
@@ -1141,30 +1205,47 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     padding-left: 0px;
   }
   .questions {
-    height: 678px;
+    min-height: 778px;
+    max-height: 1085px;
+    padding-bottom: 50px;
   }
-  .h3 {
-    font-size: 20px;
+
+  .ui-accordion-content {
+    height: 100% !important;
   }
 
   .questions__list__link {
     width: 924px;
+    height: 111px;
+    font-size: 20px !important;
+    padding: 2.15em 7.5em .5em 0.2em !important;
   }
+
   .questions__list__link__text {
     padding-left: 2px;
     padding-top: 0px;
     width: 749px;
   }
-  .questions__list__item:nth-child(1),
-  .questions__list__item:nth-child(3),
-  .questions__list__item:nth-child(5) {
-    padding-top: 39px;
-    padding-bottom: 21px;
+
+  .questions__list {
+    min-height: 100%;
+}
+  
+  /* .questions__list__link__li:nth-child(2),
+  .questions__list__link__li:nth-child(4) {
+    height: 125px;
+  } */
+
+  .questions__list__link__li:nth-child(2) h3,
+  .questions__list__link__li:nth-child(4) h3 {
+    padding: 1.65em 7.5em .5em 0.2em !important;
+    line-height: 1.5;
   }
-  .questions__list__item:nth-child(2),
-  .questions__list__item:nth-child(4) {
-    padding-bottom: 44px;
+
+  .footer {
+    margin-top: 0px;
   }
+
   .footer__container__col1 {
     padding-right: 134px;
   }
@@ -1211,7 +1292,6 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
   .header__container__mini,
   .footer__container__col3,
   .how_we_work__right__img,
-  .questions__list,
   .footer__container__col1__list,
   .hero__descr__mini,
   .about__banner__container_mini,
@@ -1533,59 +1613,100 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
   .questions__list__link {
     width: 665px;
     background-size: 50px 50px;
+    font-size: 20px !important;
+    padding: 2.15em 4em .5em 0em !important
   }
 
   .questions {
-    height: 726px;
+    min-height: 825px;
+    max-height: 1100px;
   }
-  .questions__list__medium2 {
-    padding-top: 51px;
+
+  .container__questions {
+    min-height: 825px;
+    max-height: 1100px;
   }
+
+  .questions__list {
+    margin-left: 54px;
+    width: 664px;
+    min-height: 723px;
+    max-height: 1100px;
+    padding-bottom: 30px;
+  }
+
+  .questions__list__link {
+    height: 124px;
+  }
+
+  .questions__list__link__li:nth-child(1) .questions__list__link {
+    height: 111px;
+  }
+
+
   .h3 {
     font-size: 20px;
   }
-  .questions__list__link__text {
+   .questions__list__link__text {
     padding-left: 2px;
     padding-top: 0px;
     width: 616px;
   }
+  
   .questions__list__item {
     margin-left: 53px;
     margin-right: 50px;
   }
-  .questions__list__item:nth-child(1) {
-    padding-top: 39px;
-    padding-bottom: 30px;
+
+  .questions__list__link {
+    padding: 2rem 4rem .5rem 0rem !important;
+    line-height: 31px;
   }
-  .questions__list__item:nth-child(2),
-  .questions__list__item:nth-child(4) {
-    padding-bottom: 36px;
+  
+  .questions__list__link__li:nth-child(1) .questions__list__link {
+    padding: 41px 4rem .5rem 0rem !important;
+  } 
+
+  .questions__list__link__li:nth-child(3),
+  .questions__list__link__li:nth-child(4),
+  .questions__list__link__li:nth-child(5) {
+    width: 100%;
   }
-  .questions__list__item:nth-child(3),
-  .questions__list__item:nth-child(5) {
-    padding-bottom:44px;
-    padding-top: 39px;
-  }
+
+  .questions__list__link__li:nth-child(3) .questions__list__link {
+    padding: 30px 191px 0rem 0px !important;
+  } 
+
+  .questions__list__link__li:nth-child(4) .questions__list__link,
+  .questions__list__link__li:nth-child(5) .questions__list__link {
+    padding: 30px 154px 0rem 0px !important;
+  } 
+  
   .questions__list__item:nth-child(1) .questions__list__link {
     margin-top: -9px;
     background-position: right center;
     height: 50px;
   }
-  .questions__list__item:nth-child(2) .questions__list__link,
-  .questions__list__item:nth-child(4) .questions__list__link {
-    background-position: 616px 7px;
-    height: 58px;
+
+  .questions__list__link_icon {
+    top: 37px;
+    right: 0;
   }
-  .questions__list__item:nth-child(1) .questions__list__link__text {
-    padding-top: 9px;
+
+  .questions__list__link_icon__active {
+    top: 37px;
+    right: 0;
+  } 
+
+  .ui-accordion-content {
+    height: 100% !important;
+  } 
+
+  .footer {
+    margin-top: 0px;
   }
-  .questions__list__item:nth-child(3) a span,
-  .questions__list__item:nth-child(5) a span {
-    margin-top: -9px;
-  }
-  .questions__list__item:nth-child(4) a span {
-    width: 520px;
-  }
+  
+  
   .footer__container {
     flex-direction: column-reverse;
     flex-direction: start;
@@ -2026,7 +2147,9 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     background-size: 30px 30px;
   }
   .questions {
-    height: 742px;
+    min-height: 765px;
+    max-height: 2022px;
+    padding-bottom: 20px;
   }
   .questions__list {
     padding-top: 13px;
@@ -2034,31 +2157,63 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
     flex-direction: column;
     justify-content: start;
   }
+
+  .questions__list__link__li h3 {
+    font-size: 14px !important;
+    font-weight: 500;
+    padding: 35px 66px.5em 0.2em !important;
+    line-height: 23px;
+  }
+
+  .ui-accordion-content-active {
+    height: auto !important;
+  }
+
   .questions__list__link {
     font-size: 14px;
     width: 100%;
+
   }
 
-
-  .questions__list__item {
-    width: 100%;
-    padding: 0;
-  }
-  .questions__list__item span {
-    width: 80%;
-    line-height: 1.7;
+  .questions__list__link__li:nth-child(1) h3,
+  .questions__list__link__li:nth-child(5) h3 {
+    height: 111px;
+    padding: 33px 66px.5em 0!important;
   }
 
-  .questions__list__item a {
-    height: 100%;
+  .questions__list__link__li:nth-child(2) h3,
+  .questions__list__link__li:nth-child(3) h3,
+  .questions__list__link__li:nth-child(4) h3 {
+    height: 131px;
+    padding: 29px 68px.5em 0px !important;
+    line-height: 24px;
   }
 
-  .questions__list__item:nth-child(4) span {
-    width: 82%;
+  .questions__list__link__li:nth-child(4) h3 {
+    padding: 29px 46px.5em 0px !important;
+  }
+
+  .questions__list__link_icon,
+  .questions__list__link_icon__active {
+    width: 30px;
+    height: 30px;
+    right: -1px;
   }
 
   .questions__list__link__text {
     padding: 0;
+  }
+
+  .questions__list__link__li h3 span,
+  .questions__list__link_icon__active {
+    top: 42px;
+  }
+
+  .questions__list__link__li:nth-child(3) h3 span,
+  .questions__list__link__li:nth-child(4) h3 span,
+  .questions__list__link__li:nth-child(3) h3 .questions__list__link_icon__active,
+  .questions__list__link__li:nth-child(4) h3 .questions__list__link_icon__active {
+    top: 52px;
   }
 
 
@@ -2086,7 +2241,7 @@ input[type="checkbox"].footer__form__btn-politics:checked + .footer__form__lb-po
   }
 
   .footer {
-    margin-top: 27px;
+    margin-top: 0px;
   }
   .footer__container__col2__title {
     font-size: 24px;
